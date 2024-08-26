@@ -1,0 +1,249 @@
+:root {
+    --azul-cintilante: #0475f2;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding-bottom: 300px;
+}
+
+/* MENU */
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 5vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.logo {
+    display: flex;
+    margin-left: 10vw;
+    align-items: center;
+}
+
+.logo img {
+    margin-top: 55%;
+    width: 10vw;
+    margin-bottom: 5vh;
+    object-fit: 100%;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 15vw;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .active a {
+    background-color: var(--azul-cintilante);
+    color: white;
+}
+
+nav li a {
+    font-family: "Matemasie", sans-serif;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 5px;
+    color: var(--azul-cintilante);
+}
+
+nav li a:hover {
+    background-color: var(--azul-cintilante);
+    color: #fff;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* FIM MENU */
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/dc-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 670px;
+
+}
+
+/* BANNER */
+
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.banner_headline h1 {
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 2px 2px 1px #000;
+    margin: 0;
+    padding: 0;
+    max-width: 330px;
+}
+
+.banner_headline h2 {
+    color: #fff;
+    font-size: 21px;
+    text-shadow: 2px 2px 1px #000;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    max-width: 330px;
+    text-align: justify;
+}
+
+.banner_options {
+    height: 210px;
+    display: flex;
+}
+
+.banner_title {
+    word-break: break-all;
+
+}
+
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 2px 2px 1px #000;
+    padding: 20px;
+}
+
+.banner1 {
+    border: 2px groove #554e4e;
+    background-image: url('../img/dc-films.webp');
+    background-size: cover;
+
+}
+
+.banner2 {
+    border: 2px groove #554e4e;
+    background-image: url('../img/dc-comics.png');
+    background-size: cover;
+}
+
+.banner3 {
+    border: 2px groove #554e4e;
+    background-image: url('../img/dc-animation.jpg');
+    background-size: cover;
+}
+
+/* FIM BANNER */
+
+/* GERAL */
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text {
+    color: #000;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.widget_title_bar {
+    width: 50px;
+    height: 2px;
+    background-color: var(--azul-cintilante);
+    margin-top: 5px;
+}
+
+.widget_body {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+    width: calc(50% - 10px);
+    height: 100px;
+    margin: 5px;
+    background-color: #ccc;
+}
+
+.img1 {
+    background-image: url("../img/gallery/animation_gallery.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img2 {
+    background-image: url("../img/gallery/arkham_gallery.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img3 {
+    background-image: url("../img/gallery/comics_gallery.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img4 {
+    background-image: url("../img/gallery/films_gallery.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img5 {
+    background-image: url("../img/gallery/gameplay_gallery.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img6 {
+    background-image: url("../img/gallery/series_gallery.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
+}
