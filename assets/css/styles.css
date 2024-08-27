@@ -6,9 +6,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    padding-bottom: 300px;
-}
+
 
 /* MENU */
 header {
@@ -26,12 +24,15 @@ header {
 
 .logo {
     display: flex;
-    margin-left: 10vw;
+    margin-left: 15vw;
     align-items: center;
+    margin-bottom: 5vh;
+    margin-top: 4vh;
+
 }
 
 .logo img {
-    margin-top: 55%;
+    margin-top: 59%;
     width: 10vw;
     margin-bottom: 5vh;
     object-fit: 100%;
@@ -41,19 +42,19 @@ header {
 .menu {
     display: flex;
     align-items: center;
-    margin-right: 15vw;
+    margin-right: 20vw;
 }
 
-nav ul {
+.menu nav ul {
     display: flex;
 }
 
-nav .active a {
+.menu nav .active a {
     background-color: var(--azul-cintilante);
     color: white;
 }
 
-nav li a {
+.menu nav li a {
     font-family: "Matemasie", sans-serif;
     display: block;
     padding: 15px;
@@ -63,13 +64,13 @@ nav li a {
     color: var(--azul-cintilante);
 }
 
-nav li a:hover {
+.menu nav li a:hover {
     background-color: var(--azul-cintilante);
     color: #fff;
 }
 
-nav ul,
-nav li {
+.menu nav ul,
+.menu nav li {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -190,7 +191,7 @@ nav li {
 
 .widget_title_bar {
     width: 50px;
-    height: 2px;
+    height: px;
     background-color: var(--azul-cintilante);
     margin-top: 5px;
 }
@@ -199,7 +200,6 @@ nav li {
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .img1,
@@ -245,5 +245,289 @@ nav li {
     background-size: cover;
 }
 
-.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
+.widget_section_bar {
+    width: 100%;
+    height: 5px;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    background-color: var(--azul-cintilante);
+
+}
+
+.nav-curiosidades {
+    padding: 15px;
+    background-color: #e7e5e5;
+}
+
+.nav-curiosidades li {
+    padding: 15px;
+    list-style: none;
+    text-align: justify;
+    text-shadow: 1px 0px 2px #000
+}
+
+.news {
+    padding: 10px;
+}
+
+.news ul {
+    margin: 0;
+    padding: 0;
+}
+
+.news li {
+    list-style: none;
+}
+
+.news .a-news {
+    color: #000;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.news .a-news:hover {
+    color: var(--azul-cintilante);
+    text-decoration: underline;
+}
+
+.news .douwant {
+    margin-top: 1vh;
+}
+
+.douwant .link-douwant {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000;
+}
+
+.douwant .link-douwant:hover {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--azul-cintilante)
+}
+
+hr {
+    margin-top: 4vh;
+}
+
+.personagens {
+    display: flex;
+    font-size: 21px;
+    margin-left: 45vw;
+    margin-right: 40vw;
+    margin-top: 1vh;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.widget_title_bar_char {
+    width: 50px;
+    height: 1px;
+    margin-left: 45vw;
+    margin-right: 40vw;
+    background-color: var(--azul-cintilante);
+    margin-top: 5px;
+    margin-bottom: 5vh;
+}
+
+.char-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(48% - 10px); 
+    margin: 5px;
+    background-color: var(--azul-cintilante);
+    border: 2px groove #ccc;
+}
+
+figure img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 5px;
+    border: 1px groove #ccc;
+}
+
+figure img:hover{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    transition: all 0.8s linear;
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    -ms-transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    
+    
+}
+
+
+figcaption {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 1.5em;
+   
+}
+
+figure .desc {
+    font-size: 1.2em;
+    color: #fff;
+    text-align: justify;
+    
+}
+
+
+
+/* SOBRE */
+
+.about {
+    margin-bottom: 5vh;
+}
+.about h1 { 
+    font-size: 21px;
+    margin-left: 45vw;
+    margin-right: 40vw;
+}
+.container-about {
+    display: flex;
+}
+
+.container-about-text {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    
+}
+
+.container-about-text p {
+    font-size: 21px;
+}
+
+.placeCompany {
+    width: 20%;
+    object-fit: cover;
+}
+
+
+/* Rodapé */
+footer {
+    display: flex;
+    background-color: var(--azul-cintilante);
+    justify-content: center;
+}
+
+.footer_menu {
+    display: flex;
+   
+}
+
+.fm_1, .fm_2, .fm_3 {
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+}
+
+.fm_1 {
+    background-color: #512b7e;
+}
+
+.fm_2 {
+    background-color: #6022c4;
+}
+
+.fm_3 {
+    background-color: #7a34d6;
+}
+
+.footer_area{
+    display: flex;
+}
+
+.footer_areaitem {
+    flex: 1;
+    color: #fff;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.widget_title_text {
+    color: #fff;
+}
+
+.widget_title_bar_footer{
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    margin-top: 5px;
+}
+
+.footer_copyright {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.footer-img {
+    padding: 15px;
+}
+
+.footer-img img {
+    height: 15vh;
+}
+
+.footer_menu p {
+    font-size: small;
+}
+
+.widget_title ul {
+    list-style: square;
+}
+
+.widget_title ul li {
+    margin-top: 1vh;
+    
+}
+
+.widget_title ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.widget_title ul li a:hover {
+   text-decoration: underline;
+}
+
+
+
+address p {
+    font-style: normal;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    white-space:nowrap;
+}
+
+.heart {
+    color: red;
+    font-weight: bolder;
+    font-size: 1.2em;
 }
