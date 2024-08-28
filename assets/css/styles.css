@@ -197,7 +197,7 @@ header {
 }
 
 .widget_body {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -219,26 +219,31 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .img2 {
     background-image: url("../img/gallery/arkham_gallery.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .img3 {
     background-image: url("../img/gallery/comics_gallery.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .img4 {
     background-image: url("../img/gallery/films_gallery.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .img5 {
     background-image: url("../img/gallery/gameplay_gallery.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .img6 {
     background-image: url("../img/gallery/series_gallery.jpeg");
     background-repeat: no-repeat;
@@ -342,7 +347,7 @@ figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(48% - 10px); 
+    width: calc(48% - 10px);
     margin: 5px;
     background-color: var(--azul-cintilante);
     border: 2px groove #ccc;
@@ -356,7 +361,7 @@ figure img {
     border: 1px groove #ccc;
 }
 
-figure img:hover{
+figure img:hover {
     width: 400px;
     height: 400px;
     object-fit: cover;
@@ -370,8 +375,8 @@ figure img:hover{
     -moz-border-radius: 5%;
     -ms-border-radius: 5%;
     -o-border-radius: 5%;
-    
-    
+
+
 }
 
 
@@ -379,14 +384,14 @@ figcaption {
     font-weight: bolder;
     color: #fff;
     font-size: 1.5em;
-   
+
 }
 
 figure .desc {
     font-size: 1.2em;
     color: #fff;
     text-align: justify;
-    
+
 }
 
 
@@ -396,11 +401,13 @@ figure .desc {
 .about {
     margin-bottom: 5vh;
 }
-.about h1 { 
+
+.about h1 {
     font-size: 21px;
     margin-left: 45vw;
     margin-right: 40vw;
 }
+
 .container-about {
     display: flex;
 }
@@ -409,7 +416,7 @@ figure .desc {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    
+
 }
 
 .container-about-text p {
@@ -431,10 +438,12 @@ footer {
 
 .footer_menu {
     display: flex;
-   
+
 }
 
-.fm_1, .fm_2, .fm_3 {
+.fm_1,
+.fm_2,
+.fm_3 {
     flex: 1;
     color: #fff;
     padding: 20px;
@@ -452,7 +461,7 @@ footer {
     background-color: #7a34d6;
 }
 
-.footer_area{
+.footer_area {
     display: flex;
 }
 
@@ -466,10 +475,10 @@ footer {
 }
 
 .widget_title_text {
-    color: #fff;
+    color: #000;
 }
 
-.widget_title_bar_footer{
+.widget_title_bar_footer {
     width: 50px;
     height: 1px;
     background-color: black;
@@ -498,17 +507,18 @@ footer {
     font-size: small;
 }
 
- .portal {
+.portal {
     text-decoration: none;
     white-space: nowrap;
     color: #fff;
     margin-top: 15%;
     text-decoration: underline;
 }
- .portal:hover {
+
+.portal:hover {
     color: #000;
 
- }
+}
 
 
 address p {
@@ -516,11 +526,359 @@ address p {
     background-color: #000;
     color: #fff;
     padding: 5px;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
 .heart {
     color: red;
     font-weight: bolder;
     font-size: 1.2em;
+}
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+
+    .menu nav ul.menuAberto {
+        display: flex;
+    }
+
+    .menu nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+
+    }
+
+    .menu .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 57vw;
+    }
+
+    .nm_line {
+        height: 3px;
+        background-color: var(--azul-cintilante);
+    }
+
+    header {
+        display: flex;
+        padding-right: 10vw;
+        margin-right: 70vw;
+    }
+
+    .widget_body .news {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .widget_body .curiosidades {
+        width: 100%;
+    }
+
+    .widget_body .curiosidades .nav-curiosidades {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        margin: 5%;
+    }
+
+    .container .logo a img {
+        width: 20vw;
+    }
+
+    .widget_body img .logo a img {
+        height: auto;
+    }
+
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5,
+    .img6 {
+
+        width: (100% - 5px);
+        height: 100px;
+        margin: 5px;
+        background-color: #000;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    header .container {
+        flex-direction: row;
+
+    }
+
+    #banner {
+        background-size: cover;
+    }
+
+    .banner_headline {
+        padding: 20px;
+    }
+
+    .banner_headline h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .banner_headline h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .banner1,
+    .banner2,
+    .banner3 {
+
+        flex-direction: column;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #aboutSite {
+        width: auto;
+    }
+
+    #aboutSite .container-about .placeCompany {
+        display: none;
+    }
+
+    #geral section,
+    aside {
+        padding: 20px;
+        flex-direction: column;
+
+    }
+
+
+    .footer_menu {
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+
+    }
+
+    .footer-img img {
+        width: auto;
+    }
+
+    address p {
+        padding: 10px;
+        font-size: 1.3vw;
+
+    }
+
+    .fm_1,
+    .fm_2,
+    .fm_3 {
+        margin-right: -10vw;
+        margin-left: -10vw;
+    }
+
+    .footer_copyright {
+        height: auto;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    /* 400px */
+
+    @media (max-width: 400px) {
+      
+
+        .menu nav ul.menuAberto {
+            display: flex;
+        }
+
+        .menu nav ul {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+
+        }
+
+        .menu .menuMobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 57vw;
+        }
+
+        .nm_line {
+            height: 3px;
+            background-color: var(--azul-cintilante);
+        }
+
+        header {
+            display: flex;
+            padding-right: 10vw;
+            margin-right: 70vw;
+        }
+
+        .widget_body {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .widget_body .news {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+        }
+
+        .widget_body .curiosidades {
+            flex-direction: column;
+
+        }
+
+        .widget_body .curiosidades .nav-curiosidades {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            width: 5%;
+        }
+
+        .container .logo a img {
+            width: 20vw;
+        }
+
+        .widget_body img .logo a img {
+            height: auto;
+        }
+
+        .img1,
+        .img2,
+        .img3,
+        .img4,
+        .img5,
+        .img6 {
+
+            width: (100% - 5px);
+            height: 100px;
+            margin: 5px;
+            background-color: #000;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header .container {
+            flex-direction: row;
+
+        }
+
+        #banner {
+            background-size: cover;
+        }
+
+        .banner_headline {
+            padding: 20px;
+        }
+
+        .banner_headline h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .banner_headline h2 {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .banner_options {
+            height: auto;
+            flex-direction: column;
+        }
+
+        .banner1,
+        .banner2,
+        .banner3 {
+
+            flex-direction: column;
+            height: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #aboutSite {
+            width: auto;
+        }
+
+        #aboutSite .container-about .placeCompany {
+            display: none;
+        }
+
+      #geral {
+        display: none;
+      }
+
+
+        .footer_menu {
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .footer_area {
+            flex-direction: column;
+            padding: 20px;
+
+        }
+
+        .footer-img img {
+            width: auto;
+        }
+
+        address p {
+            padding: 10px;
+            font-size: 1.3vw;
+
+        }
+
+        .fm_1,
+        .fm_2,
+        .fm_3 {
+            margin-right: -10vw;
+            margin-left: -10vw;
+        }
+
+        .footer_copyright {
+            height: auto;
+            padding-left: 20px;
+            text-align: left;
+        }
+    }
+
+
 }
