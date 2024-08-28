@@ -771,11 +771,11 @@ address p {
         }
 
         .container .logo a img {
-            width: 20vw;
+            width: 30vw;
         }
 
         .widget_body img .logo a img {
-            height: auto;
+           display: none;
         }
 
         .img1,
