@@ -855,22 +855,24 @@ address p {
             padding: 20px;
 
         }
-
+    
         .footer-img img {
-            width: auto;
+           width: auto;
+          
         }
 
         address p {
-            padding: 10px;
-            font-size: 1.3vw;
+            width: 45vw;
+            padding: 5px;
+            font-size: 1.5vw;
 
         }
 
         .fm_1,
         .fm_2,
         .fm_3 {
-            margin-right: -10vw;
-            margin-left: -10vw;
+            margin-right: -15vw;
+            margin-left: -15vw;
         }
 
         .footer_copyright {
